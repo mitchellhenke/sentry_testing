@@ -1,6 +1,6 @@
 FROM elixir:latest
 
-ENV MIX_ENV prod
+WORKDIR /opt/sentry-testing
 
 RUN mix local.hex   --force
 RUN mix local.rebar --force
